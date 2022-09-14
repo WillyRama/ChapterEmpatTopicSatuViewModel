@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/cardBerita"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="20dp"
+    android:layout_margin="5dp"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:background="@color/purple_200"
+        android:backgroundTint="@color/matahari"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_below="@id/isiberita"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/NamaPenulis"
+            android:layout_width="wrap_content"
+            android:textSize="20dp"
+            android:layout_height="wrap_content"
+            android:text="Penulis"/>
+        <TextView
+            android:layout_below="@id/NamaPenulis"
+            android:id="@+id/Namawartawan"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wartawan"
+            android:textSize="20dp"/>
+        <TextView
+            android:id="@+id/tanggal"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/narasumber"
+            android:text="tanggal"
+            android:textSize="20dp"/>
+        <TextView
+            android:id="@+id/narasumber"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/isiberita"
+            android:text="narasumber"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/isiberita"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgBerita"
+            android:textSize="10dp" />
+
+        <ImageView
+            android:id="@+id/imgBerita"
+            android:layout_width="match_parent"
+            android:layout_height="100dp" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".Berita.DetailBeritaActivity">
+        <ImageView
+            android:id="@+id/imgdetail"
+            android:layout_width="150dp"
+            android:layout_height="150dp"/>
+        <TextView
+            android:id="@+id/isiBerita"
+            android:text="Isi Berita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/imgdetail" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/detailpenulis"
+            android:text="Penulis"
+            android:layout_below="@id/imgdetail"/>
+        <TextView
+            android:layout_below="@id/detailpenulis"
+            android:text="Narasumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/detailnarasumber"/>
+        <TextView
+            android:layout_below="@id/imgdetail"
+            android:layout_alignParentRight="true"
+            android:text="Wartawan"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/detailwartawan"/>
+        <TextView
+            android:layout_alignParentRight="true"
+            android:text="Tanggal"
+            android:layout_marginRight="10dp"
+            android:layout_below="@id/detailwartawan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/detailtanggal"/>
+
+</RelativeLayout>
